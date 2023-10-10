@@ -15,6 +15,7 @@ body {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+  /* position: relative; */
 }
 
 .main-header {
@@ -34,6 +35,7 @@ article {
 
 .post-header {
   margin-bottom: 40px;
+  /* position: relative; */
 }
 
 aside {
@@ -188,6 +190,33 @@ button {
   left: 50; */
   bottom: 50px;
   right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h3 + p::first-line {
+  /* color: red; */
+}
+
+h2 {
+  /* background: #444; */
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background: #ffe70e;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  right: -25px;
+  top: -10px;
 }
 
 /* resolving conflicts */
